@@ -42,6 +42,208 @@ let selectedQuestions = [];
 // =========================
 
 const questionPool = [
+    ,
+
+{
+question:"☕ İrem kahve içmeye çağırsa ne yaparsın?",
+answers:[
+"Gitmem",
+"Belki giderim",
+"Koşa koşa giderim ☕"
+],
+correct:2
+},
+
+{
+question:"🌧️ İrem yağmurda kaldı.",
+answers:[
+"Bakıp geçerim",
+"Şemsiyeyi paylaşırım",
+"Ben ıslanırım onu korurum ☂️"
+],
+correct:2
+},
+
+{
+question:"🎵 İrem şarkı açmanı istedi.",
+answers:[
+"Rastgele açarım",
+"Sen seç de derim",
+"En sevdiği şarkıyı açarım 🎶"
+],
+correct:2
+},
+
+{
+question:"🍔 Son hamburger kaldı.",
+answers:[
+"Ben yerim",
+"Yarısını paylaşırım",
+"İrem'e veririm 🍔"
+],
+correct:2
+},
+
+{
+question:"📸 İrem fotoğraf çekilelim dedi.",
+answers:[
+"Sonra çekeriz",
+"Bir tane çekiliriz",
+"100 tane çekeriz 😂"
+],
+correct:2
+},
+
+{
+question:"🎮 İrem oyun oynamaya çağırdı.",
+answers:[
+"Bugün olmaz",
+"Belki",
+"Hemen geliyorum 🎮"
+],
+correct:2
+},
+
+{
+question:"🌸 İrem güldüğünde ne düşünürsün?",
+answers:[
+"Normal",
+"Güzel gülüyor",
+"Dünyanın en güzel şeyi ❤️"
+],
+correct:2
+},
+
+{
+question:"🎁 İrem'e hediye alacaksın.",
+answers:[
+"Rastgele bir şey",
+"Çikolata",
+"Onu mutlu edecek özel bir şey 🎁"
+],
+correct:2
+},
+
+{
+question:"🍦 Dondurma alıyorsunuz.",
+answers:[
+"Kendime alırım",
+"Paylaşırız",
+"Önce İrem'e veririm 🍦"
+],
+correct:2
+},
+
+{
+question:"😂 İrem 'Küstüm' dedi.",
+answers:[
+"Tamam derim",
+"Biraz beklerim",
+"Gönlünü alırım ❤️"
+],
+correct:2
+}
+    ,
+
+{
+question:"🌙 İrem gece 'Canım sıkıldı' dedi.",
+answers:[
+"Uyurum",
+"Biraz konuşurum",
+"Sabaha kadar sohbet ederim 🌙"
+],
+correct:2
+},
+
+{
+question:"🎬 İrem film izlemek istedi.",
+answers:[
+"Ben seçerim",
+"Rastgele açarım",
+"İrem ne isterse onu izleriz 🎬"
+],
+correct:2
+},
+
+{
+question:"🚶 İrem yürüyüşe çağırdı.",
+answers:[
+"Gitmem",
+"Belki giderim",
+"Hemen hazırlanırım 🚶"
+],
+correct:2
+},
+
+{
+question:"🍰 İrem pasta yaptı.",
+answers:[
+"Yemem",
+"Bir dilim yerim",
+"Övgü yağdırırım 🍰"
+],
+correct:2
+},
+
+{
+question:"😂 İrem sana 'Mal mısın?' dedi.",
+answers:[
+"Kızarım",
+"Gülerim",
+"'Biraz olabilir.' der gülerim 😂"
+],
+correct:2
+},
+
+{
+question:"🎡 İrem lunaparka gitmek istedi.",
+answers:[
+"Gitmem",
+"Bir ara gideriz",
+"Beraber tüm gün gezeriz 🎡"
+],
+correct:2
+},
+
+{
+question:"🌊 İrem denize gitmek istedi.",
+answers:[
+"İstemem",
+"Bakabiliriz",
+"Hazırım 🌊"
+],
+correct:2
+},
+
+{
+question:"📱 İrem mesaj attı.",
+answers:[
+"Sonra bakarım",
+"Biraz beklerim",
+"Hemen cevap veririm ⚡"
+],
+correct:2
+},
+
+{
+question:"❤️ İrem üzgün.",
+answers:[
+"Bir şey yapmam",
+"Teselli ederim",
+"Mutlu olması için uğraşırım ❤️"
+],
+correct:2
+},
+
+{
+question:"👑 İrem bir kelimeyle anlatılacak olsa?",
+answers:[
+"İyi",
+"Güzel",
+"Efsane 👑"
+],
+correct:2
+}
 
 {
 question:"❤️ İrem'i seviyor musun?",
