@@ -297,7 +297,7 @@ function finishQuiz(){
         resultDescription.innerHTML =
 
         `
-        👑 İREMVERSE EFSANESİ 👑
+        👑 İREM EFSANESİ 👑
         <br><br>
         💎 Kusursuz sonuç!
         <br>
@@ -343,7 +343,7 @@ function finishQuiz(){
         `
         😂 Bir tur daha dene!
         <br><br>
-        İremVerse seni bekliyor.
+        İrem seni bekliyor.
         `;
 
 
