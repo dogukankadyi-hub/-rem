@@ -34,6 +34,7 @@ const resultDescription = document.getElementById("resultDescription");
 
 let currentQuestion = 0;
 let score = 0;
+let eziklikSeviyesi = 0;
 
 let selectedQuestions = [];
 
