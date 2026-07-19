@@ -15,7 +15,6 @@ const resultScreen = document.getElementById("resultScreen");
 // BUTON
 
 const startBtn = document.getElementById("startBtn");
-const ezikBtn = document.getElementById("ezikBtn");
 let ezikSayisi = 0;
 
 // YAZI ALANLARI
@@ -944,28 +943,35 @@ function specialEnding(){
 
 
 }
+// =========================
+// DOĞUKAN EZİKLİK SİSTEMİ
+// =========================
+
 ezikBtn.addEventListener("click",()=>{
 
     eziklikSeviyesi++;
 
+
     eziklikText.innerHTML =
     `
-    💀 Doğukan Eziklik:
+    💀 Doğukan Eziklik Seviyesi:
     <br>
     <b>${eziklikSeviyesi}</b>
     `;
 
-});
+
 
     const box = document.createElement("div");
+
 
     box.innerHTML = `
     😂 DOĞUKAN EZİKLENDİ!
     <br><br>
-    🔥 Eziklik seviyesi +1
+    🔥 Seviye: ${eziklikSeviyesi}
     <br>
     Teşekkürler 😎
     `;
+
 
     box.style.position="fixed";
     box.style.top="50%";
@@ -985,14 +991,20 @@ ezikBtn.addEventListener("click",()=>{
     document.body.appendChild(box);
 
 
+
     setTimeout(()=>{
-        box.style.transform=
+
+        box.style.transform =
         "translate(-50%,-50%) scale(1)";
+
     },50);
 
 
+
     setTimeout(()=>{
+
         box.remove();
+
     },2500);
 
 
