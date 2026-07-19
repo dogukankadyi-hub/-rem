@@ -942,6 +942,43 @@ function specialEnding(){
 }
 ezikBtn.addEventListener("click",()=>{
 
-    alert("😂 Doğukan'ı ezikledin, teşekkürler!");
+    const box = document.createElement("div");
+
+    box.innerHTML = `
+    😂 DOĞUKAN EZİKLENDİ!
+    <br><br>
+    🔥 Eziklik seviyesi +1
+    <br>
+    Teşekkürler 😎
+    `;
+
+    box.style.position="fixed";
+    box.style.top="50%";
+    box.style.left="50%";
+    box.style.transform="translate(-50%,-50%) scale(0)";
+    box.style.background="#222";
+    box.style.color="white";
+    box.style.padding="25px 35px";
+    box.style.borderRadius="25px";
+    box.style.fontSize="20px";
+    box.style.textAlign="center";
+    box.style.fontWeight="bold";
+    box.style.zIndex="99999";
+    box.style.transition="0.3s";
+
+
+    document.body.appendChild(box);
+
+
+    setTimeout(()=>{
+        box.style.transform=
+        "translate(-50%,-50%) scale(1)";
+    },50);
+
+
+    setTimeout(()=>{
+        box.remove();
+    },2500);
+
 
 });
