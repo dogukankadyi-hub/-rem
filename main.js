@@ -950,3 +950,4 @@ function specialEnding(){
 ezikBtn.addEventListener("click",()=>{
 ...
 });
+console.log("İREM TEST ÇALIŞIYOR");
