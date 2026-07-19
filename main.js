@@ -243,7 +243,7 @@ answers:[
 "Efsane 👑"
 ],
 correct:2
-}
+},
 
 {
 question:"❤️ İrem'i seviyor musun?",
