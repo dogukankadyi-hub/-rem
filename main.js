@@ -218,20 +218,27 @@ function showQuestion(){
 
 
         button.onclick=function(){
+if(index === q.correct){
+
+    score++;
+
+    heartExplosion();
+    showMessage();
+
+}else{
+
+    wrongMessage();
+
+}
+
+currentQuestion++;
+
+
+ 
 
 
 
-            if(index === q.correct){
-
-                score++;
-
-            }
-            heartExplosion();
-showMessage();
-
-
-
-            currentQuestion++;
+            
 
 
 
@@ -579,6 +586,48 @@ function confetti(){
 
 
     }
+    function wrongMessage(){
+
+    const messages = [
+
+        "😂 Hmm... İrem bunu görmedi diyelim.",
+        "😅 Daha iyi bir seçim olabilirdi.",
+        "🌸 Bir sonraki soruda dikkat.",
+        "🤔 İrem seçeneğini bulamadın."
+
+    ];
+
+
+    const box = document.createElement("div");
+
+
+    box.innerHTML =
+    messages[Math.floor(Math.random()*messages.length)];
+
+
+    box.style.position="fixed";
+    box.style.top="60px";
+    box.style.left="50%";
+    box.style.transform="translateX(-50%)";
+    box.style.background="#555";
+    box.style.color="white";
+    box.style.padding="15px 25px";
+    box.style.borderRadius="20px";
+    box.style.fontWeight="bold";
+    box.style.zIndex="9999";
+
+
+    document.body.appendChild(box);
+
+
+    setTimeout(()=>{
+
+        box.remove();
+
+    },1800);
+
+}
+    
 
 
 }
