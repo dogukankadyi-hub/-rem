@@ -226,6 +226,8 @@ function showQuestion(){
                 score++;
 
             }
+            heartExplosion();
+showMessage();
 
 
 
