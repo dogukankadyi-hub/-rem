@@ -639,7 +639,7 @@ function specialEnding(){
     font-size:22px;
     ">
 
-    👑 İREMVERSE EFSANE SEVİYE
+    👑 İREM EFSANE SEVİYE
 
     </p>
 
