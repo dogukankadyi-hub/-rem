@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>💖 İremVerse 💖</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Arka Plan Kalpleri -->
+    <div id="hearts"></div>
+
+    <!-- BAŞLANGIÇ -->
+    <div id="startScreen" class="screen active">
+
+        <h1>💖 İremVerse 💖</h1>
+
+        <p class="subtitle">
+            Gerçek İrem hayranları için hazırlanmış
+            eğlenceli ve tamamen mizah amaçlı bir test.
+        </p>
+
+        <button id="startBtn">
+            🚀 Teste Başla
+        </button>
+
+    </div>
+
+    <!-- TEST -->
+    <div id="quizScreen" class="screen">
+
+        <div class="topBar">
+
+            <span id="questionCount">
+                Soru 1 / 20
+            </span>
+
+            <div class="progress">
+
+                <div id="progressBar"></div>
+
+            </div>
+
+        </div>
+
+        <h2 id="questionText"></h2>
+
+        <div id="answers"></div>
+
+    </div>
+
+    <!-- SONUÇ -->
+    <div id="resultScreen" class="screen">
+
+        <h1>🎉 Test Tamamlandı 🎉</h1>
+
+        <h2 id="resultTitle"></h2>
+
+        <p id="resultDescription"></p>
+
+        <button onclick="location.reload()">
+            🔄 Tekrar Oyna
+        </button>
+
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
