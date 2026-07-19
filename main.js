@@ -948,6 +948,48 @@ function specialEnding(){
 // =========================
 
 ezikBtn.addEventListener("click",()=>{
-...
+
+    eziklikSeviyesi++;
+
+    eziklikText.innerHTML =
+    `
+    💀 Doğukan Eziklik Seviyesi:
+    <br>
+    <b>${eziklikSeviyesi}</b>
+    `;
+
+
+    const box = document.createElement("div");
+
+    box.innerHTML = `
+    😂 DOĞUKAN EZİKLENDİ!
+    <br><br>
+    🔥 Seviye: ${eziklikSeviyesi}
+    <br>
+    Teşekkürler 😎
+    `;
+
+
+    box.style.position="fixed";
+    box.style.top="50%";
+    box.style.left="50%";
+    box.style.transform="translate(-50%,-50%)";
+    box.style.background="#222";
+    box.style.color="white";
+    box.style.padding="25px";
+    box.style.borderRadius="20px";
+    box.style.zIndex="99999";
+    box.style.textAlign="center";
+
+
+    document.body.appendChild(box);
+
+
+    setTimeout(()=>{
+        box.remove();
+    },2000);
+
 });
+
+
 console.log("İREM TEST ÇALIŞIYOR");
