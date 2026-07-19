@@ -365,62 +365,46 @@ function finishQuiz(){
 
 }
 // =========================
-// İREMVERSE
+// İREMOLOJİ
 // main.js
 // BÖLÜM 4/5
 // EFEKTLER
 // =========================
 
 
-// RASTGELE MESAJLAR
+// DOĞRU CEVAP MESAJLARI
 
 const randomMessages = [
 
-"💖 İrem bu cevabı beğendi!",
-"👑 Efsane seçim!",
-"🌸 İrem gülümsedi.",
-"✨ Bonus Aura +999",
-"🎉 Harika gidiyorsun!",
-"❤️ Kalp kombosu!",
-"🔥 Çok iyi cevap!",
-"🌹 İrem onayladı!"
+"💖 Çok iyi seçim!",
+"👑 Efsane cevap!",
+"🌸 Kalp kombosu!",
+"✨ Harika gidiyorsun!",
+"🔥 İrem puanı arttı!"
 
 ];
 
 
-
-// BİLDİRİM
+// DOĞRU CEVAP BİLDİRİMİ
 
 function showMessage(){
 
 
-    if(Math.random() > 0.35) return;
-
-
-
-    const box =
-    document.createElement("div");
+    const box = document.createElement("div");
 
 
     box.innerHTML =
     randomMessages[
-        Math.floor(
-            Math.random()*randomMessages.length
-        )
+        Math.floor(Math.random()*randomMessages.length)
     ];
 
 
-
     box.style.position="fixed";
-
     box.style.top="60px";
-
     box.style.left="50%";
-
     box.style.transform="translateX(-50%)";
 
     box.style.background="#ff2f7d";
-
     box.style.color="white";
 
     box.style.padding="15px 25px";
@@ -432,9 +416,7 @@ function showMessage(){
     box.style.zIndex="9999";
 
 
-
     document.body.appendChild(box);
-
 
 
     setTimeout(()=>{
@@ -444,9 +426,62 @@ function showMessage(){
     },1800);
 
 
-
 }
 
+
+
+// YANLIŞ CEVAP MESAJI
+
+function wrongMessage(){
+
+
+    const messages=[
+
+    "😂 Hmm... bu olmadı.",
+    "😅 Daha iyi bir seçim vardı.",
+    "🤔 İrem bunu beklemiyordu.",
+    "🌸 Bir sonraki soruya bakalım."
+
+    ];
+
+
+    const box=document.createElement("div");
+
+
+    box.innerHTML =
+    messages[
+        Math.floor(Math.random()*messages.length)
+    ];
+
+
+    box.style.position="fixed";
+    box.style.top="60px";
+    box.style.left="50%";
+    box.style.transform="translateX(-50%)";
+
+    box.style.background="#555";
+    box.style.color="white";
+
+    box.style.padding="15px 25px";
+
+    box.style.borderRadius="20px";
+
+    box.style.fontWeight="bold";
+
+    box.style.zIndex="9999";
+
+
+    document.body.appendChild(box);
+
+
+    setTimeout(()=>{
+
+        box.remove();
+
+    },1800);
+
+
+}
 
 
 
@@ -458,8 +493,7 @@ function heartExplosion(){
     for(let i=0;i<12;i++){
 
 
-        const heart =
-        document.createElement("div");
+        const heart=document.createElement("div");
 
 
         heart.innerHTML="❤️";
@@ -467,14 +501,14 @@ function heartExplosion(){
 
         heart.style.position="fixed";
 
-        heart.style.left =
+        heart.style.left=
         Math.random()*100+"vw";
 
 
         heart.style.top="90vh";
 
 
-        heart.style.fontSize =
+        heart.style.fontSize=
         (20+Math.random()*20)+"px";
 
 
@@ -484,7 +518,6 @@ function heartExplosion(){
         heart.style.zIndex="9999";
 
 
-
         document.body.appendChild(heart);
 
 
@@ -492,7 +525,7 @@ function heartExplosion(){
         setTimeout(()=>{
 
 
-            heart.style.transform =
+            heart.style.transform=
             `
             translateY(-${500+Math.random()*300}px)
             rotate(${Math.random()*720}deg)
@@ -513,12 +546,9 @@ function heartExplosion(){
         },2200);
 
 
-
     }
 
-
 }
-
 
 
 
@@ -530,14 +560,12 @@ function confetti(){
     for(let i=0;i<100;i++){
 
 
-        const piece =
-        document.createElement("div");
-
+        const piece=document.createElement("div");
 
 
         piece.style.position="fixed";
 
-        piece.style.left =
+        piece.style.left=
         Math.random()*100+"vw";
 
 
@@ -549,14 +577,14 @@ function confetti(){
         piece.style.height="10px";
 
 
-        piece.style.background =
+        piece.style.background=
         `hsl(${Math.random()*360},100%,60%)`;
 
 
         piece.style.zIndex="9999";
 
-        piece.style.transition="3s";
 
+        piece.style.transition="3s";
 
 
         document.body.appendChild(piece);
@@ -566,7 +594,7 @@ function confetti(){
         setTimeout(()=>{
 
 
-            piece.style.transform =
+            piece.style.transform=
             `
             translateY(${window.innerHeight+100}px)
             rotate(720deg)
@@ -584,50 +612,9 @@ function confetti(){
         },3500);
 
 
-
     }
-    function wrongMessage(){
-
-    const messages = [
-
-        "😂 Hmm... İrem bunu görmedi diyelim.",
-        "😅 Daha iyi bir seçim olabilirdi.",
-        "🌸 Bir sonraki soruda dikkat.",
-        "🤔 İrem seçeneğini bulamadın."
-
-    ];
-
-
-    const box = document.createElement("div");
-
-
-    box.innerHTML =
-    messages[Math.floor(Math.random()*messages.length)];
-
-
-    box.style.position="fixed";
-    box.style.top="60px";
-    box.style.left="50%";
-    box.style.transform="translateX(-50%)";
-    box.style.background="#555";
-    box.style.color="white";
-    box.style.padding="15px 25px";
-    box.style.borderRadius="20px";
-    box.style.fontWeight="bold";
-    box.style.zIndex="9999";
-
-
-    document.body.appendChild(box);
-
-
-    setTimeout(()=>{
-
-        box.remove();
-
-    },1800);
 
 }
-    
 
 
 }
