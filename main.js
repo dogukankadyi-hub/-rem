@@ -943,6 +943,16 @@ function specialEnding(){
 }
 ezikBtn.addEventListener("click",()=>{
 
+    eziklikSeviyesi++;
+
+    eziklikText.innerHTML =
+    `
+    😈 Doğukan Eziklik Seviyesi:
+    <b>${eziklikSeviyesi}</b>
+    `;
+
+});
+
     const box = document.createElement("div");
 
     box.innerHTML = `
