@@ -376,7 +376,7 @@ const randomMessages = [
 "🎉 Harika gidiyorsun!",
 "❤️ Kalp kombosu!",
 "🔥 Çok iyi cevap!",
-"🌹 İremVerse onayladı!"
+"🌹 İrem onayladı!"
 
 ];
 
