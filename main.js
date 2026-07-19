@@ -15,7 +15,8 @@ const resultScreen = document.getElementById("resultScreen");
 // BUTON
 
 const startBtn = document.getElementById("startBtn");
-
+const ezikBtn = document.getElementById("ezikBtn");
+let ezikSayisi = 0;
 
 // YAZI ALANLARI
 
@@ -936,6 +937,51 @@ function specialEnding(){
         finalBox.remove();
 
     },5000);
+
+
+}
+ezikBtn.addEventListener("click",()=>{
+
+    ezikSayisi++;
+
+    const box = document.createElement("div");
+
+    box.innerHTML = `
+    😂 DOĞUKAN EZİKLENDİ!
+    <br><br>
+    🔥 Eziklik seviyesi: +${ezikSayisi}
+    <br>
+    Teşekkürler 😎
+    `;
+
+
+    box.style.position="fixed";
+    box.style.top="50%";
+    box.style.left="50%";
+    box.style.transform="translate(-50%,-50%) scale(0)";
+
+    box.style.background="#222";
+    box.style.color="white";
+    box.style.padding="25px";
+    box.style.borderRadius="25px";
+    box.style.textAlign="center";
+    box.style.fontSize="20px";
+    box.style.zIndex="99999";
+    box.style.transition="0.3s";
+
+
+    document.body.appendChild(box);
+
+
+    setTimeout(()=>{
+        box.style.transform=
+        "translate(-50%,-50%) scale(1)";
+    },50);
+
+
+    setTimeout(()=>{
+        box.remove();
+    },2500);
 
 
 }
