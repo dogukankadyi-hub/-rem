@@ -46,7 +46,7 @@ let selectedQuestions = [];
 // =========================
 
 const questionPool = [
-    ,
+    
 
 {
 question:"☕ İrem kahve içmeye çağırsa ne yaparsın?",
