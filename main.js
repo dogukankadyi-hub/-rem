@@ -36,6 +36,9 @@ let currentQuestion = 0;
 let score = 0;
 let eziklikSeviyesi = 0;
 
+const eziklikText = document.getElementById("eziklikText");
+const ezikBtn = document.getElementById("ezikBtn");
+
 let selectedQuestions = [];
 
 
@@ -947,7 +950,8 @@ ezikBtn.addEventListener("click",()=>{
 
     eziklikText.innerHTML =
     `
-    😈 Doğukan Eziklik Seviyesi:
+    💀 Doğukan Eziklik:
+    <br>
     <b>${eziklikSeviyesi}</b>
     `;
 
